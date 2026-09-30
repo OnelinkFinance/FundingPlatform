@@ -3,12 +3,12 @@ import express from 'express';
 import cors from 'cors';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
-import { booksFindContactExact, analyticsFindClientExact, toRecord, exact, col, accessToken } from './lib/zoho.js';
-import { decide } from './lib/rules.js';
-import { appendRecord } from './lib/sheets.js';
-import * as gate from './lib/gate.js';
-import * as auth from './lib/auth.js';
-import * as store from './lib/store.js';
+import { booksFindContactExact, analyticsFindClientExact, toRecord, exact, col, accessToken } from './zoho.js';
+import { decide } from './rules.js';
+import { appendRecord } from './sheets.js';
+import * as gate from './gate.js';
+import * as auth from './auth.js';
+import * as store from './store.js';
 
 const E = process.env;
 const app = express();
